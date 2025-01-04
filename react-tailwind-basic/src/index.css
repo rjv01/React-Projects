@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bgGrid {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, #eef2ff 1px, transparent 1px), linear-gradient(to bottom, #eef2ff 1px, transparent 1px);
+}
+
+* {
+    font-family: 'JetBrains Mono', sans-serif;
+    font-weight: 300;
+}

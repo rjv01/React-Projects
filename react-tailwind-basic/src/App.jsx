@@ -1,0 +1,26 @@
+import Counter from './components/Counter';
+import Stopwatch from './components/Stopwatch';
+import TicTacToe from './components/tictactoe/TicTacToe';
+import Home from './components/Home';
+import Todo from './components/todoFile/Todo';
+
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+
+function App() {
+
+  return (
+    <>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />} ></Route>
+          <Route path='/counter' element={<Counter />} />
+          <Route path='/stopwatch' element={<Stopwatch />} />
+          <Route path='/todo' element={<Todo />} />
+          <Route path='/tictactoe' element={<TicTacToe />} />
+        </Routes>
+      </Router>
+    </>
+  )
+}
+
+export default App
