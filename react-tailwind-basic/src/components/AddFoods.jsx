@@ -29,7 +29,7 @@ export default function AddFoods() {
         </ul>
         <div className='m-5 text-xl'>
             <input className='m-5 w-[250px] h-[40px]' type="text" name="" id="inputfood" placeholder='Enter Food Element'/>
-            <button className=' border rounded-full w-[100px] h-[50px] bg-blue-400 hover:bg-blue-600' onClick={handleAddFood}>Add</button>
+            <button className=' border rounded-full w-[100px] h-[50px] bg-blue-400 hover:bg-blue-600 duration-200' onClick={handleAddFood}>Add</button>
         </div>
     </div>
   )
