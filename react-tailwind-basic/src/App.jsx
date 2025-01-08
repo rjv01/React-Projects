@@ -3,6 +3,7 @@ import Stopwatch from './components/Stopwatch';
 import TicTacToe from './components/tictactoe/TicTacToe';
 import Home from './components/Home';
 import Todo from './components/todoFile/Todo';
+import ColorPicker from './components/ColorPicker';
 
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 
@@ -17,6 +18,7 @@ function App() {
           <Route path='/stopwatch' element={<Stopwatch />} />
           <Route path='/todo' element={<Todo />} />
           <Route path='/tictactoe' element={<TicTacToe />} />
+          <Route path='/colorpicker' element={<ColorPicker />} />
         </Routes>
       </Router>
     </>
