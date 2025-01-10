@@ -12,6 +12,7 @@ export default function Home() {
           <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/tictactoe'}>TicTacToe</Link>
           <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/colorpicker'}>ColorPicker</Link>
           <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/addfoods'}>AddFoods</Link>
+          <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/list'}>List</Link>
         </div>
     </div>
   )
