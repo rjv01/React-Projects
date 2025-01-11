@@ -6,14 +6,17 @@ import Todo from './components/todoFile/Todo';
 import ColorPicker from './components/ColorPicker';
 import AddFoods from './components/AddFoods';
 import List from './components/List';
+import AddCar from './components/AddCar';
 
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import HomeIcon from './components/HomeIcon';
 
 function App() {
 
   return (
-    <>
+    <div>
       <Router>
+        <HomeIcon />
         <Routes>
           <Route path='/' element={<Home />} ></Route>
           <Route path='/counter' element={<Counter />} />
@@ -23,9 +26,10 @@ function App() {
           <Route path='/colorpicker' element={<ColorPicker />} />
           <Route path='/addfoods' element={<AddFoods />} />
           <Route path='/list' element={<List />} />
+          <Route path='/addcar' element={<AddCar />} />
         </Routes>
       </Router>
-    </>
+    </div>
   )
 }
 
