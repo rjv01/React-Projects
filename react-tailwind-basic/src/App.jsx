@@ -10,6 +10,7 @@ import AddCar from './components/AddCar';
 
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import HomeIcon from './components/HomeIcon';
+import Flexdir from './components/Flexdir';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path='/addfoods' element={<AddFoods />} />
           <Route path='/list' element={<List />} />
           <Route path='/addcar' element={<AddCar />} />
+          <Route path='/flexdir' element={<Flexdir />} />
         </Routes>
       </Router>
     </div>
