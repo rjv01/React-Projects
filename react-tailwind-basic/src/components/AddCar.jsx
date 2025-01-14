@@ -60,7 +60,7 @@ export default function AddCar() {
         </div>
 
         <button
-          className="w-full py-3 bg-white text-black font-bold rounded-lg hover:bg-blue-600 transition duration-300"
+          className="w-full py-3 bg-white text-black font-bold rounded-lg hover:bg-blue-600 hover:text-white transition duration-300"
           onClick={handleAddCar}
         >
           Add Car

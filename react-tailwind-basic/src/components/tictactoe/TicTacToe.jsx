@@ -51,7 +51,7 @@ export default function TicTacToe() {
   return (
     <div className="min-h-screen bgGrid flex flex-col justify-center items-center">
       <h1 className="text-4xl font-bold mb-6">Tic Tac Toe Game</h1>
-      <div className="text-white bg-black grid grid-cols-3 gap-4 p-6">
+      <div className="text-white bg-blue-400 transition duration-300 grid grid-cols-3 gap-4 p-6">
         {state.map((value, index) => (
           <Block
             key={index}
