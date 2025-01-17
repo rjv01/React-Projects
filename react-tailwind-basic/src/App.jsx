@@ -9,9 +9,11 @@ import List from './components/List';
 import AddCar from './components/AddCar';
 
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+
 import HomeIcon from './components/HomeIcon';
 import Flexdir from './components/Flexdir';
 import DataStore from './components/DataStore';
+import DigitalClock from './components/DigitalClock';
 
 function App() {
 
@@ -31,6 +33,7 @@ function App() {
           <Route path='/addcar' element={<AddCar />} />
           <Route path='/flexdir' element={<Flexdir />} />
           <Route path='/datastore' element={<DataStore />} />
+          <Route path='/digitalclock' element={<DigitalClock />} />
         </Routes>
       </Router>
     </div>

@@ -16,6 +16,7 @@ export default function Home() {
           <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/addcar'}>AddCar</Link>
           {/* <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/flexdir'}>FlexDir</Link> */}
           <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/datastore'}>DataStore</Link>
+          <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/digitalclock'}>DigitalClock</Link>
         </div>
     </div>
   )
