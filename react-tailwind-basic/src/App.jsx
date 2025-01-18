@@ -14,6 +14,7 @@ import HomeIcon from './components/HomeIcon';
 import Flexdir from './components/Flexdir';
 import DataStore from './components/DataStore';
 import DigitalClock from './components/DigitalClock';
+import ComponentA from './components/ComponentA';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
           <Route path='/flexdir' element={<Flexdir />} />
           <Route path='/datastore' element={<DataStore />} />
           <Route path='/digitalclock' element={<DigitalClock />} />
+          <Route path='/componentA' element={<ComponentA />} />
         </Routes>
       </Router>
     </div>
