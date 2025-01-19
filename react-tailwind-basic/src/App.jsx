@@ -15,6 +15,8 @@ import Flexdir from './components/Flexdir';
 import DataStore from './components/DataStore';
 import DigitalClock from './components/DigitalClock';
 import ComponentA from './components/ComponentA';
+import FoucsEg from './components/FoucsEg';
+import DiffstateRef from './components/DiffstateRef';
 
 function App() {
 
@@ -36,6 +38,8 @@ function App() {
           <Route path='/datastore' element={<DataStore />} />
           <Route path='/digitalclock' element={<DigitalClock />} />
           <Route path='/componentA' element={<ComponentA />} />
+          <Route path='/foucseg' element={<FoucsEg />} />
+          <Route path='/diffstateref' element={<DiffstateRef />} />
         </Routes>
       </Router>
     </div>
