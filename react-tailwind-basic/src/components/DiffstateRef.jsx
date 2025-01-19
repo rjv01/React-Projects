@@ -1,15 +1,15 @@
 import React, { useEffect, useState, useRef } from "react";
 
 export default function DiffstateRef() {
-  const [count, setCount] = useState(0); // Tracks re-rendering count
-  const times = useRef(0); // Tracks clicks without re-rendering
+  const [count, setCount] = useState(0); 
+  const times = useRef(0); 
 
   function handleCount() {
-    setCount((prev) => prev + 1); // Increment count
+    setCount((prev) => prev + 1); 
   }
 
   function handleTimes() {
-    times.current += 1; // Increment `times` without re-rendering
+    times.current += 1;
     console.log(`Current times: ${times.current}`);
   }
 
@@ -26,7 +26,6 @@ export default function DiffstateRef() {
       <h1 className="text-2xl font-bold font-mono text-blue-400">UseState and UseRef</h1>
       <p>See Inspect for detail</p>
       <div className="grid grid-cols-2 border border-blue-500 m-5 p-5">
-        {/* State Section */}
         <div className="border border-blue-800 p-3">
           <h1>Using useState</h1>
           <button
@@ -38,7 +37,6 @@ export default function DiffstateRef() {
           <p>Count: {count}</p>
         </div>
 
-        {/* Ref Section */}
         <div className="border border-blue-800 p-3 ">
           <h1>Using useRef</h1>
           <button
