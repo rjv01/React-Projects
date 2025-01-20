@@ -1,59 +1,17 @@
-// import React from 'react'
-
-// export default function SearchInput(props) {
-//     const {posts,setSearchResults} = props;
-
-//     function handleSubmit(e){
-//         e.preventDefault();
-//     }
-
-//     const handleSearchChange = (e)=>{
-//         // const txt = e.target.value.trim();
-//         if(e.target.value){
-//             setSearchResults(posts);
-//             return ;
-//         }
-//         const resultsArray = posts.filter(post=> post.title.includes(e.target.value) || (post.body.includes(e.target.value)));
-
-//         setSearchResults(resultsArray);
-//     }
-    
-//     return (
-//         <div>
-//             <form
-//                 className=''
-//                 onSubmit={handleSubmit}
-//             >
-//                 <input 
-//                     type="text"
-//                     placeholder='Enter text'
-//                     onChange={handleSearchChange}/>
-//                 <button
-
-//                 >
-//                     Search
-//                 </button>
-//             </form>
-//         </div>
-//     )
-// }
 import React from 'react';
 
-export default function SearchInput(props) {
-    const { posts, setSearchResults } = props;
-
+export default function SearchInput({ posts, setSearchResults }) {
     const handleSubmit = (e) => {
         e.preventDefault();
     };
 
     const handleSearchChange = (e) => {
-        const searchText = e.target.value.toLowerCase(); // Convert input to lowercase
+        const searchText = e.target.value.toLowerCase(); 
         if (!searchText) {
-            setSearchResults(posts); // Show all posts if input is empty
+            setSearchResults(posts); 
             return;
         }
 
-        // Filter posts by title or body
         const resultsArray = posts.filter(
             (post) =>
                 post.title.toLowerCase().includes(searchText) ||
@@ -64,16 +22,14 @@ export default function SearchInput(props) {
     };
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    placeholder="Enter text to search"
-                    onChange={handleSearchChange}
-                    aria-label="Search posts"
-                />
-                <button type="submit">Search</button>
-            </form>
-        </div>
+        <form onSubmit={handleSubmit}>
+            <input
+                type="text"
+                placeholder="Enter text to search"
+                onChange={handleSearchChange}
+                className='m-3 p-3 text-xl border-4 rounded-xl border-blue-800'
+            />
+            <i className="fa-solid fa-magnifying-glass text-3xl"></i>
+        </form>
     );
 }

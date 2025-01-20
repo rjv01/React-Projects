@@ -18,7 +18,7 @@ export default function HomeIcon() {
 
   return (
     <div className='flex justify-center items-center bgGrid'>
-        <Link to={'/'}><i className="fa-solid fa-house text-3xl mt-5"></i></Link>
+        <Link to={'/'}><i className="fa-solid fa-house text-3xl text-blue-500 hover:text-blue-700 duration-300 mt-5"></i></Link>
         <div className="absolute top-4 right-5">
           <button 
             className="p-5 m-5 font-bold text-xl text-black rounded-md hover:text-blue-500 transition duration-200"
