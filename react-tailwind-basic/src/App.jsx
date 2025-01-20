@@ -17,6 +17,7 @@ import DigitalClock from './components/DigitalClock';
 import ComponentA from './components/ComponentA';
 import FoucsEg from './components/FoucsEg';
 import DiffstateRef from './components/DiffstateRef';
+import SearchBar from './components/SearchBar';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
           <Route path='/componentA' element={<ComponentA />} />
           <Route path='/foucseg' element={<FoucsEg />} />
           <Route path='/diffstateref' element={<DiffstateRef />} />
+          <Route path='/searchbar' element={<SearchBar />} />
         </Routes>
       </Router>
     </div>

@@ -20,6 +20,7 @@ export default function Home() {
           <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/componentA'}>ComponentA</Link>
           <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/foucseg'}>FoucsEg</Link>
           <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/diffstateref'}>DiffstateRef</Link>
+          <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/searchbar'}>SearchBar</Link>
         </div>
     </div>
   )
