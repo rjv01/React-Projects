@@ -18,6 +18,8 @@ import ComponentA from './components/ComponentA';
 import FoucsEg from './components/FoucsEg';
 import DiffstateRef from './components/DiffstateRef';
 import SearchBar from './components/SearchBar';
+import Infinite from './components/Infinite';
+import EnterColor from './components/EnterColor';
 
 function App() {
 
@@ -42,6 +44,8 @@ function App() {
           <Route path='/foucseg' element={<FoucsEg />} />
           <Route path='/diffstateref' element={<DiffstateRef />} />
           <Route path='/searchbar' element={<SearchBar />} />
+          <Route path='/infinite' element={<Infinite />} />
+          <Route path='/entercolor' element={<EnterColor />} />
         </Routes>
       </Router>
     </div>

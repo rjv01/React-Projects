@@ -9,3 +9,7 @@ export const getPost = async ()=>{
     return repsone.data;
 };
 
+export const getPostsPage = async(pageParam=1,options = {})=>{
+    const resp = await api.get(`/posts?_page=${pageParam}`,options)
+    return resp.data;
+}
