@@ -1,75 +1,66 @@
-import React, { useState,useRef, useEffect } from 'react'
-import Header from './Header';
+import React, { useState,useRef, useEffect } from 'react'   
 import Footer from './Footer';
+import ItemList from './ItemList';
+import AddItems from './AddItems';
 
 export default function Content() {
-    const [items,setItems] = useState(()=>{
-        const savedItems = localStorage.getItem('Gitems');
-        return savedItems ? JSON.parse(savedItems):['apple','almond'];
-    });
+    const [items,setItems] = useState(JSON.parse(localStorage.getItem('shoppinglist')));
 
-    const [checked,setChecked] = useState(()=>{
-        const savedChecked = localStorage.getItem('checkGitems');
-        return savedChecked ? JSON.parse(savedChecked):{};
-    });
+    const [newItem,setNewItem] = useState('');
 
-    const inputRef = useRef(null);
-
-    function handleAddItems(){
-        const itm = inputRef.current.value.trim();
-        if(itm !== ""){
-            setItems((i) => [...i,itm]);
-        }
-        else{
-            alert('Enter items');
-        }
-        inputRef.current.value = "";
+    function setAndSaveItem(myItemList) {
+        setItems(myItemList); // Update the items state
+        localStorage.setItem('shoppinglist', JSON.stringify(myItemList));
     }
-    function handleCheckedItems(index) {
-        setChecked((prevChecked) => ({
-            ...prevChecked,
-            [index]: !prevChecked[index],
-        }));
+    
+
+    const addItem = (item) =>{
+        const id = items.length ? items[items.length-1].id + 1 : 1;
+        const myNewItem = {id,checked:false,item};
+        const myNewListItem = [...items,myNewItem];
+        setAndSaveItem(myNewListItem);
     }
 
-    function handleDeleteItems(index){
-        setItems((i)=> i.filter((_,i)=> i !== index));
+    function handleSubmit(e){
+        e.preventDefault();
+        if(!newItem)
+            return;
+        addItem(newItem)
+        setNewItem('')
     }
 
-    useEffect(()=>{
-        localStorage.setItem('Gitems',JSON.stringify(items));
-        localStorage.setItem('checkedGitems',JSON.stringify(checked));
-    },[items,checked]);
+    function handleCheck(id){
+        const listItems = items.map((item)=> item.id === id ? {...item,checked:!item.checked} : {...item} )
+        setAndSaveItem(listItems);
+    }
 
-return (
-        <div className='min-h-screen bgGrid'>
-        <Header />
-            <div>
-                <div className='flex justify-center'>
-                    <input 
-                    type="text"
-                    ref={inputRef}
-                    placeholder='Enter Item'
+    function handleDelete(id){
+        const listItem = items.filter((item)=> item.id !== id);
+        setAndSaveItem(listItem);
+    }
+    
+    return(
+        <div className='min-h-screen bg-slate-600 flex flex-col justify-center items-center'>
+            <AddItems 
+                newItem={newItem}
+                setNewItem={setNewItem}
+                handleSubmit={handleSubmit}
+            />
+            <div className=''>
+                {items.length ? (
+                    <ItemList 
+                        items={items} 
+                        handleCheck={handleCheck} 
+                        handleDelete={handleDelete}
                     />
-                    <button onClick={handleAddItems}>Add</button>
-                </div>
-                <div className='flex flex-col justify-center items-center'>
-                    {items.map((item,index)=>(
-                        <li
-                        key={index}
-                        style={{
-                            textDecoration: checked[index] ? 'line-through' : 'none',
-                        }}
-                        >
-                        <button onClick={() => handleCheckedItems(index)}>Checked</button>
-                        {item}
-                        <button onClick={() => handleDeleteItems(index)}>Delete</button>
-                    </li>
-                    
-                    ))}
-                </div>
+                    ):(
+                        <h1>Empty List</h1>
+                    )
+                }
+                    <Footer 
+                    length={items.length}
+            />
             </div>
-        <Footer />
         </div>
     )
 }
