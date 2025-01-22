@@ -20,6 +20,7 @@ import DiffstateRef from './components/DiffstateRef';
 import SearchBar from './components/SearchBar';
 import Infinite from './components/Infinite';
 import EnterColor from './components/EnterColor';
+import Content from './components/GroceriesList/Content';
 
 function App() {
 
@@ -46,6 +47,7 @@ function App() {
           <Route path='/searchbar' element={<SearchBar />} />
           <Route path='/infinite' element={<Infinite />} />
           <Route path='/entercolor' element={<EnterColor />} />
+          <Route path='/content' element={<Content />} />
         </Routes>
       </Router>
     </div>
