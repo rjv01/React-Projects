@@ -8,7 +8,8 @@ export default function AddItems({newItem,setNewItem,handleSubmit}) {
                 <label htmlFor="addItem">Add Item</label>
                 <input
                     autoFocus
-                    type="text" 
+                    type="text"
+                    id='addItem'
                     placeholder='Add Item'
                     required
                     value={newItem}

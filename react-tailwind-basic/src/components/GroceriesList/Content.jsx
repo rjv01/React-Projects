@@ -2,11 +2,14 @@ import React, { useState,useRef, useEffect } from 'react'
 import Footer from './Footer';
 import ItemList from './ItemList';
 import AddItems from './AddItems';
+import SearchItems from './SearchItems';
 
 export default function Content() {
-    const [items,setItems] = useState(JSON.parse(localStorage.getItem('shoppinglist')));
-
+    const [items,setItems] = useState(
+        ()=> JSON.parse(localStorage.getItem('shoppinglist'))|| [] );
+        
     const [newItem,setNewItem] = useState('');
+    const [search,setSearch] = useState('');
 
     function setAndSaveItem(myItemList) {
         setItems(myItemList); // Update the items state
@@ -45,6 +48,10 @@ export default function Content() {
                 newItem={newItem}
                 setNewItem={setNewItem}
                 handleSubmit={handleSubmit}
+            />
+            <SearchItems 
+                search={search}
+                setSearch={setSearch}
             />
             <div className=''>
                 {items.length ? (

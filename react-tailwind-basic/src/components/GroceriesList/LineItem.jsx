@@ -3,7 +3,7 @@ import React from 'react'
 export default function LineItem({item,handleCheck,handleDelete}) {
   return (
     <div>
-        <li key={item.id}>
+        <li>
             <input
                 type='checkbox'
                 onChange={()=> handleCheck(item.id)}
