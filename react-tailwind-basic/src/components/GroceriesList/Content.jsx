@@ -43,30 +43,35 @@ export default function Content() {
     }
     
     return(
-        <div className='min-h-screen bg-slate-600 flex flex-col justify-center items-center'>
-            <AddItems 
-                newItem={newItem}
-                setNewItem={setNewItem}
-                handleSubmit={handleSubmit}
-            />
-            <SearchItems 
-                search={search}
-                setSearch={setSearch}
-            />
-            <div className=''>
-                {items.length ? (
-                    <ItemList 
-                        items={items} 
-                        handleCheck={handleCheck} 
-                        handleDelete={handleDelete}
-                    />
-                    ):(
-                        <h1>Empty List</h1>
-                    )
-                }
-                    <Footer 
-                    length={items.length}
-            />
+        <div className='min-h-screen flex flex-col items-center bgGrid'>
+            <div className='border-8 rounded-xl border-red-600 m-3 p-8'>
+                <div className='flex flex-col justify-center items-center'>
+                    <h1 className='text-2xl font-mono font-bold'>Grocery List</h1>
+                </div>
+                <AddItems 
+                    newItem={newItem}
+                    setNewItem={setNewItem}
+                    handleSubmit={handleSubmit}
+                />
+                {/* <SearchItems 
+                    search={search}
+                    setSearch={setSearch}
+                /> */}
+                <div className='font-bold text-lg'>
+                    {items.length ? (
+                        <ItemList 
+                            items={items} 
+                            handleCheck={handleCheck} 
+                            handleDelete={handleDelete}
+                        />
+                        ):(
+                            <h1 className=' text-red-500'>Empty List</h1>
+                        )
+                    }
+                        <Footer 
+                        length={items.length}
+                />
+                </div>
             </div>
         </div>
     )
