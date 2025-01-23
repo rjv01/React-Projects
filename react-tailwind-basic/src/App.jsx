@@ -21,6 +21,7 @@ import SearchBar from './components/SearchBar';
 import Infinite from './components/Infinite';
 import EnterColor from './components/EnterColor';
 import Content from './components/GroceriesList/Content';
+import CatFact from './components/CatFact';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
           <Route path='/infinite' element={<Infinite />} />
           <Route path='/entercolor' element={<EnterColor />} />
           <Route path='/content' element={<Content />} />
+          <Route path='/catfact' element={<CatFact />} />
         </Routes>
       </Router>
     </div>
