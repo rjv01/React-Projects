@@ -22,6 +22,7 @@ import Infinite from './components/Infinite';
 import EnterColor from './components/EnterColor';
 import Content from './components/GroceriesList/Content';
 import CatFact from './components/CatFact';
+import GroceryList from './components/GroceriesList/GroceryList';
 
 function App() {
 
@@ -48,7 +49,8 @@ function App() {
           <Route path='/searchbar' element={<SearchBar />} />
           <Route path='/infinite' element={<Infinite />} />
           <Route path='/entercolor' element={<EnterColor />} />
-          <Route path='/content' element={<Content />} />
+          {/* <Route path='/content' element={<Content />} /> */}
+          <Route path='/grocerylist' element={<GroceryList />} />
           <Route path='/catfact' element={<CatFact />} />
         </Routes>
       </Router>
