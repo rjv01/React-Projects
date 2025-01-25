@@ -23,6 +23,7 @@ import EnterColor from './components/EnterColor';
 import Content from './components/GroceriesList/Content';
 import CatFact from './components/CatFact';
 import GroceryList from './components/GroceriesList/GroceryList';
+import FetchData from './components/JsonPlaceHolder/FetchData';
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
           {/* <Route path='/content' element={<Content />} /> */}
           <Route path='/grocerylist' element={<GroceryList />} />
           <Route path='/catfact' element={<CatFact />} />
+          <Route path='/fetchdata' element={<FetchData />} />
         </Routes>
       </Router>
     </div>
