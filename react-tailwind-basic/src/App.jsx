@@ -24,6 +24,7 @@ import Content from './components/GroceriesList/Content';
 import CatFact from './components/CatFact';
 import GroceryList from './components/GroceriesList/GroceryList';
 import FetchData from './components/JsonPlaceHolder/FetchData';
+import BlogApp from './ReactBlog/BlogApp';
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
           <Route path='/grocerylist' element={<GroceryList />} />
           <Route path='/catfact' element={<CatFact />} />
           <Route path='/fetchdata' element={<FetchData />} />
+          <Route path='/blogapp' element={<BlogApp />} />
         </Routes>
       </Router>
     </div>
