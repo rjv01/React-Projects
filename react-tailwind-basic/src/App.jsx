@@ -55,7 +55,7 @@ function App() {
           <Route path='/grocerylist' element={<GroceryList />} />
           <Route path='/catfact' element={<CatFact />} />
           <Route path='/fetchdata' element={<FetchData />} />
-          <Route path='/blogapp' element={<BlogApp />} />
+          {/* <Route path='/blogapp' element={<BlogApp />} /> */}
         </Routes>
       </Router>
     </div>

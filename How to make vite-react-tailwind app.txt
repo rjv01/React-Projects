@@ -1,0 +1,24 @@
+npm create vite@latest myAppName -- --template
+react
+javascript
+
+cd myAppName
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+
+
+tailwind.config.js
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+
+./src/index.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
