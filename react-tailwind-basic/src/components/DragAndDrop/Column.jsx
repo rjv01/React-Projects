@@ -1,16 +1,15 @@
-import React from 'react'
-import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable'
-import Tasks from './Tasks'
+import React from 'react';
+import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable';
+import Tasks from './Tasks';
 
-export default function Column({tasks,handleClick}) {
+export default function Column({ tasks, handleDelete }) {
   return (
-    // <div className='grid grid-cols-4 text-xl font-semibold gap-3'>
     <div className='flex flex-col justify-center items-center text-xl font-semibold gap-3'>
-        <SortableContext items={tasks} strategy={verticalListSortingStrategy}>
+        <SortableContext items={tasks.map(task => task.id)} strategy={verticalListSortingStrategy}>
             {tasks.map((task) => (
-                <Tasks  key={task.id} id={task.id} title={task.title} imgPic={task.imgPic} handleClick={handleClick} />
+                <Tasks key={task.id} id={task.id} title={task.title} imgPic={task.imgPic} handleDelete={handleDelete} />
             ))}
         </SortableContext>
     </div>
-  )
+  );
 }
