@@ -52,28 +52,37 @@ export default function DndHome() {
     }
 
     function handleDelete(id) {
-        console.log('ok');
+        console.log('Deleting task with id:', id);
+    
         setTasks(prevTasks => {
+            console.log('Previous Tasks:', prevTasks);
+    
             const updatedArr = prevTasks.filter(task => task.id !== id);
-            localStorage.setItem('taskList', JSON.stringify(updatedArr)); // Store updated array immediately
+            console.log('Updated Tasks:', updatedArr);
+    
+            localStorage.setItem('taskList', JSON.stringify(updatedArr));
+    
             return updatedArr;
         });
     }
     
-
     return (
         <div className='min-h-screen bgGrid'>
             <div className='text-4xl m-2 p-3 font-bold flex flex-col items-center'>
                 <h1>Drag And Drop</h1>
             </div>
-            <div>
+            <div className='flex justify-center m-3 p-3 '>
                 <input 
                     type="text"
+                    autoFocus
                     placeholder='Enter Name' 
                     value={textInput}
+                    className='border border-black rounded-xl   '
                     onChange={(e) => setTextInput(e.target.value)}
                 />
-                <button onClick={handleAdd}>Submit</button>
+                <button
+                    className='border m-2 p-3 rounded-xl bg-slate-400 text-black text-xl font-mono hover:bg-slate-700 hover:text-white duration-200'
+                    onClick={handleAdd}>Submit</button>
             </div>
             <div className='flex justify-center items-center'>
                 <DndContext onDragEnd={handleDragEnd} collisionDetection={closestCorners}>

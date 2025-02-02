@@ -5,6 +5,10 @@ import { CSS } from '@dnd-kit/utilities';
 export default function Tasks({ id, title, imgPic, handleDelete }) {
     const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id });
 
+    function handleDel(){
+        console.log('ok')
+    }
+
     const style = {
         transition,
         transform: transform ? CSS.Transform.toString(transform) : undefined,
@@ -20,7 +24,8 @@ export default function Tasks({ id, title, imgPic, handleDelete }) {
         >   
             <h3>{id} {title}</h3>
             <button 
-                onClick={()=> console.log('p')}
+                onSubmit={() =>console.log('ok')}
+                type="submit"
                 className='text-red-600 hover:bg-red-600 hover:text-white m-2 p-3 rounded-xl'    
             >
                 Delete
