@@ -84,6 +84,7 @@ export default function DndHome() {
                     className='border m-2 p-3 rounded-xl bg-slate-400 text-black text-xl font-mono hover:bg-slate-700 hover:text-white duration-200'
                     onClick={handleAdd}>Submit</button>
             </div>
+                <p className='flex justify-center m-2 font-mono text-sm text-red-400'>Delete is Not currenting working on it</p>
             <div className='flex justify-center items-center'>
                 <DndContext onDragEnd={handleDragEnd} collisionDetection={closestCorners}>
                     <Column tasks={tasks} handleDelete={handleDelete} />
