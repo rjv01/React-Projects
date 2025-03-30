@@ -26,6 +26,9 @@ import GroceryList from './components/GroceriesList/GroceryList';
 import FetchData from './components/JsonPlaceHolder/FetchData';
 import BlogApp from './ReactBlog/BlogApp';
 import DragAndDrop from './components/DragAndDrop/DndHome'
+import ColorWheel from './components/ColorWheel'
+import FetchUserData from './components/FetchUserData'
+import DragnDropTask from './components/DragDropHome/DragnDropTask';
 
 function App() {
 
@@ -57,7 +60,11 @@ function App() {
           <Route path='/catfact' element={<CatFact />} />
           <Route path='/fetchdata' element={<FetchData />} />
           <Route path='/dragandrop' element={<DragAndDrop />} />
+          <Route path='/colorwheel' element={<ColorWheel />} />
+          <Route path='/fetchuserdata' element={<FetchUserData />} />
           {/* <Route path='/blogapp' element={<BlogApp />} /> */}
+          
+          <Route path='/dragndroptask' element={<DragnDropTask />} />
         </Routes>
       </Router>
     </div>

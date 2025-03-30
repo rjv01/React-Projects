@@ -27,6 +27,9 @@ export default function Home() {
           <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/grocerylist'}>GroceryList</Link>
           <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/fetchdata'}>FetchData</Link>
           <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/dragandrop'}>DragAndDrop</Link>
+          <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/colorwheel'}>ColorWheel</Link>
+          <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/fetchuserdata'}>FetchUserData</Link>
+          <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/dragndroptask'}>DragnDropTask</Link>
           {/* <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/blogapp'}>BlogApp</Link> */}
           {/* <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/infinite'}>Infinite</Link> */}
         </div>
