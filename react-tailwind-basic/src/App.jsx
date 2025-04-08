@@ -29,6 +29,9 @@ import DragAndDrop from './components/DragAndDrop/DndHome'
 import ColorWheel from './components/ColorWheel'
 import FetchUserData from './components/FetchUserData'
 import DragnDropTask from './components/DragDropHome/DragnDropTask';
+import DropDownMenu from './components/DropDownMenu';
+import CountryStateCity from './components/CountryList/CountryStateCity';
+import CountryListI from './components/CountryList/CountryListI';
 
 function App() {
 
@@ -65,6 +68,9 @@ function App() {
           {/* <Route path='/blogapp' element={<BlogApp />} /> */}
           
           <Route path='/dragndroptask' element={<DragnDropTask />} />
+          <Route path='/dropdownmenu' element={<DropDownMenu />} />
+          <Route path='/countrystatecity' element={<CountryStateCity />} />
+          <Route path='/countrylisti/:countryCode' element={<CountryListI />} />
         </Routes>
       </Router>
     </div>

@@ -7,6 +7,22 @@
     background-image: linear-gradient(to right, #eef2ff 1px, transparent 1px), linear-gradient(to bottom, #eef2ff 1px, transparent 1px);
 }
 
+.bgGrid {
+    background-image: 
+      linear-gradient(
+        to right,
+        rgba(255, 0, 255, 0.08) 0%,     /* light pink */
+        rgba(0, 255, 255, 0.08) 50%,    /* light blue */
+        rgba(138, 43, 226, 0.08) 100%   /* light lavender */
+      ),
+      linear-gradient(to right, #eef2ff 1px, transparent 1px),
+      linear-gradient(to bottom, #eef2ff 1px, transparent 1px);
+    background-size: 100% 100%, 40px 40px, 40px 40px;
+    background-blend-mode: normal;
+  }
+  
+
+
 * {
     font-family: 'JetBrains Mono', sans-serif;
     font-weight: 300;
