@@ -7,6 +7,7 @@ import ColorPicker from './components/ColorPicker';
 import AddFoods from './components/AddFoods';
 import List from './components/List';
 import AddCar from './components/AddCar';
+import FinallyWeatherApi from './components/FinallyWeatherApi';
 
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 
@@ -71,6 +72,7 @@ function App() {
           <Route path='/dropdownmenu' element={<DropDownMenu />} />
           <Route path='/countrystatecity' element={<CountryStateCity />} />
           <Route path='/countrylisti/:countryCode' element={<CountryListI />} />
+          <Route path='/finallyweatherapi' element={<FinallyWeatherApi />} />
         </Routes>
       </Router>
     </div>

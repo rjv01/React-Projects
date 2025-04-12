@@ -8,3 +8,5 @@ export const getFact = async ()=>{
     const response = await api.get('/fact');
     return response.data;
 }
+
+
