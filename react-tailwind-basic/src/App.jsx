@@ -33,6 +33,7 @@ import DragnDropTask from './components/DragDropHome/DragnDropTask';
 import DropDownMenu from './components/DropDownMenu';
 import CountryStateCity from './components/CountryList/CountryStateCity';
 import CountryListI from './components/CountryList/CountryListI';
+import WordCounter from './components/WordCounter';
 
 function App() {
 
@@ -73,6 +74,7 @@ function App() {
           <Route path='/countrystatecity' element={<CountryStateCity />} />
           <Route path='/countrylisti/:countryCode' element={<CountryListI />} />
           <Route path='/finallyweatherapi' element={<FinallyWeatherApi />} />
+          <Route path='/wordcounter' element={<WordCounter />} />
         </Routes>
       </Router>
     </div>
