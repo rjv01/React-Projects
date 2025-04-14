@@ -34,6 +34,7 @@ import DropDownMenu from './components/DropDownMenu';
 import CountryStateCity from './components/CountryList/CountryStateCity';
 import CountryListI from './components/CountryList/CountryListI';
 import WordCounter from './components/WordCounter';
+import SeatBooking from './components/SeatBooking';
 
 function App() {
 
@@ -75,6 +76,7 @@ function App() {
           <Route path='/countrylisti/:countryCode' element={<CountryListI />} />
           <Route path='/finallyweatherapi' element={<FinallyWeatherApi />} />
           <Route path='/wordcounter' element={<WordCounter />} />
+          <Route path='/seatbooking' element={<SeatBooking />} />
         </Routes>
       </Router>
     </div>

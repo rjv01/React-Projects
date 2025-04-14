@@ -34,6 +34,7 @@ export default function Home() {
           <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/countrystatecity'}>CountryStateCity</Link>
           <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/finallyweatherapi'}>FinallyWeatherApi</Link>
           <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/wordcounter'}>WordCounter</Link>
+          <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/seatbooking'}>SeatBooking</Link>
           {/* <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/blogapp'}>BlogApp</Link> */}
           {/* <Link className='flex flex-col justify-center items-center m-5 underline hover:text-blue-700 duration-200' to={'/infinite'}>Infinite</Link> */}
         </div>
