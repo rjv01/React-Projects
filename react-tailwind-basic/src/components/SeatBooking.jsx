@@ -24,10 +24,10 @@ export default function SeatBooking() {
     };
 
     const renderRow = (startNumber, label) => (
-        <div className='mb-6'>
+        <div className='mb-6 ml-8'>
             <h2 className='text-xl font-semibold mb-2'>{label}</h2>
             <div className='grid grid-cols-5 gap-4'>
-                {[...Array(10).keys()].map((i) => {
+                {[...Array(15   ).keys()].map((i) => {
                     const seatNumber = startNumber + i;
                     const isBooked = bookedSeat.includes(seatNumber);
                     const isSelected = selectedSeats.includes(seatNumber);
@@ -58,8 +58,8 @@ export default function SeatBooking() {
 
             <div className='w-full max-w-3xl p-6 bg-white rounded-xl shadow-lg'>
                 {renderRow(1, "VIPs")}
-                {renderRow(11, "General")}
-                {renderRow(21, "Eco Lobby")}
+                {renderRow(16, "General")}
+                {renderRow(26, "Eco Lobby")}
 
                 <div className='flex justify-center mt-8'>
                     <button
