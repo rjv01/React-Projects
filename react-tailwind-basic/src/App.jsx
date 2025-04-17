@@ -36,6 +36,7 @@ import CountryListI from './components/CountryList/CountryListI';
 import WordCounter from './components/WordCounter';
 import SeatBooking from './components/SeatBooking';
 import MemeGen from './components/MemeGenFolder/MemeGen';
+import CommentSection from './components/Comment/CommentSection';
 
 function App() {
 
@@ -79,6 +80,7 @@ function App() {
           <Route path='/wordcounter' element={<WordCounter />} />
           <Route path='/seatbooking' element={<SeatBooking />} />
           <Route path='/memegen' element={<MemeGen />} />
+          <Route path='/commentsection' element={<CommentSection />} />
         </Routes>
       </Router>
     </div>
