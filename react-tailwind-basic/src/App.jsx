@@ -35,6 +35,7 @@ import CountryStateCity from './components/CountryList/CountryStateCity';
 import CountryListI from './components/CountryList/CountryListI';
 import WordCounter from './components/WordCounter';
 import SeatBooking from './components/SeatBooking';
+import MemeGen from './components/MemeGenFolder/MemeGen';
 
 function App() {
 
@@ -77,6 +78,7 @@ function App() {
           <Route path='/finallyweatherapi' element={<FinallyWeatherApi />} />
           <Route path='/wordcounter' element={<WordCounter />} />
           <Route path='/seatbooking' element={<SeatBooking />} />
+          <Route path='/memegen' element={<MemeGen />} />
         </Routes>
       </Router>
     </div>
