@@ -38,6 +38,7 @@ import SeatBooking from './components/SeatBooking';
 import MemeGen from './components/MemeGenFolder/MemeGen';
 import CommentSection from './components/Comment/CommentSection';
 import DiwaliGiftExchange from './components/Diwali/DiwaliGiftExchange';
+import SendOTPandCopy from './components/OTP/SendOTPandCopy';
 function App() {
 
   return (
@@ -82,6 +83,7 @@ function App() {
           <Route path='/memegen' element={<MemeGen />} />
           <Route path='/commentsection' element={<CommentSection />} />
           <Route path='/diwaligiftexchange' element={<DiwaliGiftExchange />} />
+          <Route path='/sendotpandcopy' element={<SendOTPandCopy />} />
         </Routes>
       </Router>
     </div>
