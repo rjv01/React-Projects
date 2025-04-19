@@ -37,7 +37,7 @@ import WordCounter from './components/WordCounter';
 import SeatBooking from './components/SeatBooking';
 import MemeGen from './components/MemeGenFolder/MemeGen';
 import CommentSection from './components/Comment/CommentSection';
-
+import DiwaliGiftExchange from './components/Diwali/DiwaliGiftExchange';
 function App() {
 
   return (
@@ -81,6 +81,7 @@ function App() {
           <Route path='/seatbooking' element={<SeatBooking />} />
           <Route path='/memegen' element={<MemeGen />} />
           <Route path='/commentsection' element={<CommentSection />} />
+          <Route path='/diwaligiftexchange' element={<DiwaliGiftExchange />} />
         </Routes>
       </Router>
     </div>
