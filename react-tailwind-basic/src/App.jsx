@@ -39,6 +39,9 @@ import MemeGen from './components/MemeGenFolder/MemeGen';
 import CommentSection from './components/Comment/CommentSection';
 import DiwaliGiftExchange from './components/Diwali/DiwaliGiftExchange';
 import SendOTPandCopy from './components/OTP/SendOTPandCopy';
+import MultiFilter from './components/MultiFilters/MultiFilter';
+
+
 function App() {
 
   return (
@@ -84,6 +87,7 @@ function App() {
           <Route path='/commentsection' element={<CommentSection />} />
           <Route path='/diwaligiftexchange' element={<DiwaliGiftExchange />} />
           <Route path='/sendotpandcopy' element={<SendOTPandCopy />} />
+          <Route path='/multifilter' element={<MultiFilter />} />
         </Routes>
       </Router>
     </div>
