@@ -13,7 +13,7 @@ export default function EnterColor() {
             <div className='flex flex-col justify-center'>
                 <p 
                 id="area"
-                className='flex justify-center items-center border border-black shadow-2xl rounded-xl font-mono text-2xl capitalize h-[450px] w-[450px] duration-300'
+                className='flex justify-center items-center border border-black shadow-2xl rounded-xl font-mono text-2xl capitalize h-[450px] w-[450px] duration-700'
                 style={{backgroundColor:color|| 'white'}}
                 >
                 {color || 'Color Name'}
