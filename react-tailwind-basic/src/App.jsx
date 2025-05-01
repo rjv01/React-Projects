@@ -41,6 +41,7 @@ import DiwaliGiftExchange from './components/Diwali/DiwaliGiftExchange';
 import SendOTPandCopy from './components/OTP/SendOTPandCopy';
 import MultiFilter from './components/MultiFilters/MultiFilter';
 import KBC from './components/Quiz/KBC';
+import FAQs from './components/FAQs/Faques';
 
 function App() {
 
@@ -89,6 +90,7 @@ function App() {
           <Route path='/sendotpandcopy' element={<SendOTPandCopy />} />
           <Route path='/multifilter' element={<MultiFilter />} />
           <Route path='/kbc' element={<KBC />} />
+          <Route path='/faqs' element={<FAQs />} />
         </Routes>
       </Router>
     </div>
