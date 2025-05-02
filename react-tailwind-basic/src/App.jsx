@@ -43,6 +43,7 @@ import MultiFilter from './components/MultiFilters/MultiFilter';
 import KBC from './components/Quiz/KBC';
 import FAQs from './components/FAQs/Faques';
 import Modal from './components/ModalCom/Modal';
+import CommanPage from './components/StackQueue/CommanPage';
 
 function App() {
 
@@ -93,6 +94,7 @@ function App() {
           <Route path='/kbc' element={<KBC />} />
           <Route path='/faqs' element={<FAQs />} />
           <Route path='/modal' element={<Modal />} />
+          <Route path='/commanpage' element={<CommanPage />} />
         </Routes>
       </Router>
     </div>
