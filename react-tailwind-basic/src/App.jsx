@@ -44,6 +44,7 @@ import KBC from './components/Quiz/KBC';
 import FAQs from './components/FAQs/Faques';
 import Modal from './components/ModalCom/Modal';
 import CommanPage from './components/StackQueue/CommanPage';
+import RedoUndoHome from './components/RedoUndo/RedoUndoHome';
 
 function App() {
 
@@ -95,6 +96,7 @@ function App() {
           <Route path='/faqs' element={<FAQs />} />
           <Route path='/modal' element={<Modal />} />
           <Route path='/commanpage' element={<CommanPage />} />
+          <Route path='/redoundo' element={<RedoUndoHome />} />
         </Routes>
       </Router>
     </div>
