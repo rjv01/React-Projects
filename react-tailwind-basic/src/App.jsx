@@ -45,6 +45,7 @@ import FAQs from './components/FAQs/Faques';
 import Modal from './components/ModalCom/Modal';
 import CommanPage from './components/StackQueue/CommanPage';
 import RedoUndoHome from './components/RedoUndo/RedoUndoHome';
+import ShoppingList from './components/ShoppingLi/ShoppingList';
 
 function App() {
 
@@ -97,6 +98,7 @@ function App() {
           <Route path='/modal' element={<Modal />} />
           <Route path='/commanpage' element={<CommanPage />} />
           <Route path='/redoundo' element={<RedoUndoHome />} />
+          <Route path='/shoppinglist' element={<ShoppingList />} />
         </Routes>
       </Router>
     </div>
