@@ -47,6 +47,7 @@ import CommanPage from './components/StackQueue/CommanPage';
 import RedoUndoHome from './components/RedoUndo/RedoUndoHome';
 import ShoppingList from './components/ShoppingLi/ShoppingList';
 import MultiStepFormPage from './components/MultiStepForm/MultiStepFormPage';
+import ImageCarousel from "./components/ImageCarousel/ImgCarousel";
 
 function App() {
 
@@ -101,6 +102,7 @@ function App() {
           <Route path='/redoundo' element={<RedoUndoHome />} />
           <Route path='/shoppinglist' element={<ShoppingList />} />
           <Route path='/multistepformpage' element={<MultiStepFormPage />} />
+          <Route path='/imagecarousel' element={<ImageCarousel />} />
         </Routes>
       </Router>
     </div>
