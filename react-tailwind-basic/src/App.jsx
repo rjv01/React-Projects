@@ -48,6 +48,7 @@ import RedoUndoHome from './components/RedoUndo/RedoUndoHome';
 import ShoppingList from './components/ShoppingLi/ShoppingList';
 import MultiStepFormPage from './components/MultiStepForm/MultiStepFormPage';
 import ImageCarousel from "./components/ImageCarousel/ImgCarousel";
+import RatingStar from './components/Rating/RatingStar';
 
 function App() {
 
@@ -103,6 +104,7 @@ function App() {
           <Route path='/shoppinglist' element={<ShoppingList />} />
           <Route path='/multistepformpage' element={<MultiStepFormPage />} />
           <Route path='/imagecarousel' element={<ImageCarousel />} />
+          <Route path='/ratingstar' element={<RatingStar />} />
         </Routes>
       </Router>
     </div>
